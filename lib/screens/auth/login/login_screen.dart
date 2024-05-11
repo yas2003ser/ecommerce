@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/configs/routes/app_routes.dart';
 import 'package:ecommerce_app/core/util/app_colors.dart';
 import 'package:ecommerce_app/core/util/app_strings.dart';
 import 'package:flutter/material.dart';
@@ -113,7 +114,7 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 40.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -125,7 +126,9 @@ class LoginScreen extends StatelessWidget {
                         fontWeight: FontWeight.normal),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.register);
+                    },
                     child: Text(
                       'Register',
                       style: TextStyle(

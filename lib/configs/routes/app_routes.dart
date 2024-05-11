@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/screens/auth/login/login_screen.dart';
+import 'package:ecommerce_app/screens/auth/register/register_screen.dart';
 import 'package:ecommerce_app/screens/splash/splash_screen.dart';
 import 'package:ecommerce_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +31,9 @@ class AppRoutes {
           builder: (_) => const LoginScreen(),
         );
       case Routes.register:
-      // return MaterialPageRoute(
-      //   builder: (_) => const Register(),
-      // );
+        return MaterialPageRoute(
+          builder: (_) => const RegisterScreen(),
+        );
       case Routes.home:
       // return MaterialPageRoute(
       //   builder: (_) => const HomeScreen(),
